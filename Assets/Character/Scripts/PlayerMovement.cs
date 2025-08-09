@@ -11,7 +11,6 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     Animator animator;
 
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -50,13 +49,14 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = scale;
         }
     }
-    public void Dash(InputAction.CallbackContext context)
+    public void Dash()
     {
-        if (context.performed)
+        if (Input.GetKeyDown(KeyCode.LeftControl)) 
         {
-            // Implement dash logic here, e.g., applying a force or changing velocity
-            Vector2 dashDirection = moveInput.normalized * movespeed * 10; // Example dash speed
+            Vector2 dashDirection = movement.normalized * movespeed * 1000; 
             rb.AddForce(dashDirection, ForceMode2D.Impulse);
+            Debug.Log("Dashing in direction: " + dashDirection);
         }
+       
     }
 }
