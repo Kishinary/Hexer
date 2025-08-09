@@ -7,10 +7,9 @@ public class PlayerMovement : MonoBehaviour
     public float movespeed = 1f;
     Vector2 moveInput;
 
-    public Vector2 movement;
     Rigidbody2D rb;
     Animator animator;
-
+    public float Enegrgy = 10;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -20,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         rb.linearVelocity = moveInput * movespeed;
-        movement = moveInput;
+        Dash();
     }
     public void Move(InputAction.CallbackContext context)
     {
@@ -51,12 +50,32 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Dash()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl)) 
+        Vector2 DashDirection;
+        Enegrgy += Time.deltaTime * 10f;
+        if (Enegrgy >= 10)
         {
-            Vector2 dashDirection = movement.normalized * movespeed * 1000; 
-            rb.AddForce(dashDirection, ForceMode2D.Impulse);
-            Debug.Log("Dashing in direction: " + dashDirection);
+            if (Input.GetKey(KeyCode.LeftControl))
+            {
+                if (moveInput.x != 0)
+                {
+                    Vector2 dashDirection = moveInput.normalized * movespeed * 8;
+                    DashDirection = dashDirection;
+                }
+                else
+                {
+                    Vector2 dashDirection = new Vector2(transform.localScale.x * movespeed * 3, 0);
+                    DashDirection = dashDirection;
+                }
+
+
+
+                    rb.AddForce(DashDirection, ForceMode2D.Impulse);
+                Debug.Log("Dashing in direction: " + DashDirection);
+                Enegrgy = 0;
+
+
+
+            }
         }
-       
     }
 }
