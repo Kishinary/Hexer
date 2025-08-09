@@ -34,9 +34,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Flip",
+                    "name": "Dash",
                     "type": "Button",
-                    "id": "dbdeba9c-caab-44b4-bc0a-de53ca9719d1",
+                    "id": "fa305ad6-f63a-4ceb-bd7d-34bd83690632",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -266,34 +266,12 @@
                 },
                 {
                     "name": "",
-                    "id": "44c23438-a5e1-4373-8bd3-96a07bccf952",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Flip",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c81da18e-ab99-4a5b-bb09-5f3d2278a28d",
-                    "path": "<Keyboard>/a",
+                    "id": "836df752-f49c-4b41-a89d-348b6817a063",
+                    "path": "<Keyboard>/ctrl",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Flip",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "255e090b-5d6d-4d0a-a29a-f412eaa17944",
-                    "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Flip",
+                    "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

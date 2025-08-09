@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float movespeed = 1f;
     Vector2 moveInput;
 
-
+    public Vector2 movement;
     Rigidbody2D rb;
     Animator animator;
 
@@ -20,6 +20,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        rb.linearVelocity = moveInput * movespeed;
+        movement = moveInput;
+    }
+    public void Move(InputAction.CallbackContext context)
+    {
+        moveInput = context.ReadValue<Vector2>();
         if (moveInput.x != 0 || moveInput.y != 0)
         {
             animator.SetBool("IsMoving", true);
@@ -28,13 +34,6 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("IsMoving", false);
         }
-    }
-    public void Move(InputAction.CallbackContext context)
-    {
-        moveInput = context.ReadValue<Vector2>();
-    }
-    public void Flip(InputAction.CallbackContext context)
-    {
         if (context.performed)
         {
             Vector3 scale = transform.localScale;
@@ -49,6 +48,15 @@ public class PlayerMovement : MonoBehaviour
                 scale.x = -Mathf.Abs(scale.x);
             }
             transform.localScale = scale;
+        }
+    }
+    public void Dash(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            // Implement dash logic here, e.g., applying a force or changing velocity
+            Vector2 dashDirection = moveInput.normalized * movespeed * 10; // Example dash speed
+            rb.AddForce(dashDirection, ForceMode2D.Impulse);
         }
     }
 }
