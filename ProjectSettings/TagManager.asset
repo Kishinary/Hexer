@@ -44,6 +44,9 @@ TagManager:
   - name: ground
     uniqueID: 1439169527
     locked: 0
+  - name: dirt wall
+    uniqueID: 537249857
+    locked: 0
   - name: grass
     uniqueID: 1239271939
     locked: 0
