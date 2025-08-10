@@ -41,8 +41,23 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: ground
+    uniqueID: 1439169527
+    locked: 0
+  - name: grass
+    uniqueID: 1239271939
+    locked: 0
   - name: Character
     uniqueID: 472719141
+    locked: 0
+  - name: collide items
+    uniqueID: 4238708003
+    locked: 0
+  - name: no cllide items
+    uniqueID: 4162700321
+    locked: 0
+  - name: water
+    uniqueID: 2395043819
     locked: 0
   m_RenderingLayers:
   - Default
