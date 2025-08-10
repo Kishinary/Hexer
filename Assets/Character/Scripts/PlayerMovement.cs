@@ -58,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (moveInput.x != 0)
                 {
-                    Vector2 dashDirection = moveInput.normalized * movespeed * 8;
+                    Vector2 dashDirection = moveInput.normalized * movespeed * 14;
                     DashDirection = dashDirection;
                 }
                 else
@@ -72,7 +72,15 @@ public class PlayerMovement : MonoBehaviour
                     rb.AddForce(DashDirection, ForceMode2D.Impulse);
                 Debug.Log("Dashing in direction: " + DashDirection);
                 Enegrgy = 0;
+                animator.SetBool("Dash", true);
+                
 
+                float dashDuration = 0.2f; // Duration of the dash
+                dashDuration -= Time.deltaTime;
+                if (dashDuration ==0)
+                {
+                    animator.SetBool("Dash", false);
+                }
 
 
             }
