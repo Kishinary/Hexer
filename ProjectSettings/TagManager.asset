@@ -50,6 +50,9 @@ TagManager:
   - name: grass
     uniqueID: 1239271939
     locked: 0
+  - name: stair
+    uniqueID: 3877868051
+    locked: 0
   - name: Character
     uniqueID: 472719141
     locked: 0
