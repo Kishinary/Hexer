@@ -9,7 +9,7 @@ public class enter_house : MonoBehaviour
         Debug.Log("Enter House script started.");
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log(other.name);
         Debug.Log("OnTriggerEnter called with: " + other.name);
