@@ -56,11 +56,11 @@ TagManager:
   - name: Character
     uniqueID: 472719141
     locked: 0
-  - name: collide items
-    uniqueID: 4238708003
-    locked: 0
   - name: no cllide items
     uniqueID: 4162700321
+    locked: 0
+  - name: collide items
+    uniqueID: 4238708003
     locked: 0
   - name: water
     uniqueID: 2395043819
