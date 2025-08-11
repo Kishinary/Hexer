@@ -65,5 +65,8 @@ TagManager:
   - name: water
     uniqueID: 2395043819
     locked: 0
+  - name: animal
+    uniqueID: 775569185
+    locked: 0
   m_RenderingLayers:
   - Default
