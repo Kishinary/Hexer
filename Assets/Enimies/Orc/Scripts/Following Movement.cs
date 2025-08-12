@@ -40,9 +40,5 @@ public class FollowingMovement : MonoBehaviour
 
         }
     }
-    void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("OnTriggerEnter called with: " + other.name);
-
-    }
+    
 }
