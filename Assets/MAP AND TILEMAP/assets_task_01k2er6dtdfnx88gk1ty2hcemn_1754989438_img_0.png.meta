@@ -1,25 +1,10 @@
 fileFormatVersion: 2
-guid: 9a74224377b9a084ab77f620d769c426
+guid: cac81f7527dad6848b4b5b7685ee05d8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6853316077166303748
-    second: Tree_0
-  - first:
-      213: 4134985361545656292
-    second: Tree_1
-  - first:
-      213: -1566730818833404899
-    second: Tree_2
-  - first:
-      213: -7301469273254094464
-    second: Tree_3
-  - first:
-      213: 4246777929600769233
-    second: Tree_4
-  - first:
-      213: -1089773682390131457
-    second: Tree_5
+      213: 1332616145554886547
+    second: assets_task_01k2er6dtdfnx88gk1ty2hcemn_1754989438_img_0_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 8
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,67 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tree_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 19
-        width: 32
-        height: 45
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 40a98f869aedb1f50800000000000000
-      internalID: 6853316077166303748
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tree_24
+      name: assets_task_01k2er6dtdfnx88gk1ty2hcemn_1754989438_img_0_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 1024
+        height: 1536
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 67a022e92fdb092458b030188b64e785
-      internalID: -1552820099
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tree_25
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd3a7e2d8444c9c4ba4201e9cddb02b7
-      internalID: -1057139262
+      spriteID: 39fcfb9e2576e7210800000000000000
+      internalID: 1332616145554886547
       vertices: []
       indices: 
       edges: []
@@ -184,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9005a504523d6604a9ee9544d16dea76
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -194,32 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tree_0: 6853316077166303748
-      Tree_1: 4134985361545656292
-      Tree_10: 504245255
-      Tree_11: 375519290
-      Tree_12: -408635985
-      Tree_13: 2087121250
-      Tree_14: -1188040783
-      Tree_15: 1729580213
-      Tree_16: 1578724345
-      Tree_17: 1965918328
-      Tree_18: -1548579614
-      Tree_19: 140703982
-      Tree_2: -1566730818833404899
-      Tree_20: -135467985
-      Tree_21: -357860479
-      Tree_22: 190319576
-      Tree_23: 610635196
-      Tree_24: -1552820099
-      Tree_25: -1057139262
-      Tree_3: -7301469273254094464
-      Tree_4: 4246777929600769233
-      Tree_5: -1089773682390131457
-      Tree_6: -1368894166
-      Tree_7: -574968425
-      Tree_8: -1612887910
-      Tree_9: -1231650751
+      assets_task_01k2er6dtdfnx88gk1ty2hcemn_1754989438_img_0_0: 1332616145554886547
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
