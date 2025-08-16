@@ -9,8 +9,35 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene-Binh.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/House 1.unity
-    guid: aaebab06feeb44b46aae88f5da0b43b9
+    path: Assets/Scenes/Lobby.unity
+    guid: fcb39f8efaeb74549b1d5eb75db092c9
+  - enabled: 1
+    path: Assets/Scenes/Lobby/achievement journalist.unity
+    guid: 839549f5a35ebb74d82f5a9a5a115b82
+  - enabled: 1
+    path: Assets/Scenes/Lobby/bar.unity
+    guid: be8091e910ea0314d98a8e2260b5a0b0
+  - enabled: 1
+    path: Assets/Scenes/Lobby/dugeon.unity
+    guid: e7189a2a1c59e784caf0dbea8ecb0396
+  - enabled: 1
+    path: Assets/Scenes/Lobby/guild.unity
+    guid: 4bfb8d9c3bde7804198fe0e223d4390e
+  - enabled: 1
+    path: Assets/Scenes/Lobby/lobby center.unity
+    guid: 72af910ea3f576a4095e2d4670fa4a9a
+  - enabled: 1
+    path: Assets/Scenes/Lobby/park.unity
+    guid: 8c729c2eb59ccf042a90a6fd7ce3f6db
+  - enabled: 1
+    path: Assets/Scenes/Lobby/quick teleport.unity
+    guid: 1a5f2ca41b5192044926a0ce7f7119fd
+  - enabled: 1
+    path: Assets/Scenes/Lobby/shop card.unity
+    guid: fe276419e8276074e8977f949cee82d7
+  - enabled: 1
+    path: Assets/Scenes/Lobby/spellbinded shop.unity
+    guid: b63fec71d5457014c92322823d20bc9e
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: f1c879081bd2dad46a4d76319c6a5e6d, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: a764d7927fc6ef0479049dd1e29ddf7e, type: 3}

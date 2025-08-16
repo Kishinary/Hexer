@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fb0e51fc62d35354093d899c1843a43b
+guid: 051fa56de8585df4e8ca324f382d7f10
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638906214182386874
+  platformSettingsDirtyTick: 638909453192717828
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -125,17 +125,17 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: lobby center modified
     originalName: 
-    pivot: {x: 0.5289487, y: 0.41127682}
+    pivot: {x: 0.53944296, y: 0.40092912}
     alignment: 9
-    border: {x: 2, y: 9, z: 0, w: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
-      x: 5
+      x: 4
       y: 4
       width: 121
       height: 167
-    spriteID: ffe91f97465a0af499e4b3c0ebc3b1f2
+    spriteID: 10d94730d4e8f5340a0b9f9a33a1a190
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -166,7 +166,7 @@ ScriptedImporter:
         y: 18
         width: 121
         height: 167
-      spriteId: ffe91f97465a0af499e4b3c0ebc3b1f2
+      spriteId: 10d94730d4e8f5340a0b9f9a33a1a190
     linkedCells: []
     parentIndex: -1
   platformSettings:
