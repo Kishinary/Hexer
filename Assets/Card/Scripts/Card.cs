@@ -14,27 +14,29 @@ namespace CardScripts
         public string cardDescription;
         public List <CardType> cardtype;
 
-        public int health;
 
         public List<DamageType> damagetype;
         public int damage;
         public int minimumDamage;
         public int maximumDamage;
 
-       public enum CardType
+        public int CardEnergyCost;
+
+        public enum CardType
         {
             Melee,
             Ranged,
             Magic,
-            Summon
+            Summon,
+            Support
         }
         public enum DamageType
         {
             Melee,
             Ranged,
             Magic,
-            Summon
-
+            Summon,
+            Support
         }
     }
    

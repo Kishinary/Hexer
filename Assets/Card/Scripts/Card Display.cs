@@ -8,17 +8,15 @@ public class CardDisplay : MonoBehaviour
 {
 
     public Card carddata;
-        public Image cardImage;
+    public Image cardImage;
     public TMP_Text cardName;
     public TMP_Text cardDescription;
-
+    public TMP_Text cardenergy;
 
     public Image[] typeimages;
+     
 
 
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         UpdateCardDisplay();
@@ -30,6 +28,15 @@ public class CardDisplay : MonoBehaviour
         cardImage.sprite = carddata.cardImage;
         cardName.text = carddata.cardName;
         cardDescription.text = carddata.cardDescription;
-        
+        cardenergy.text = carddata.CardEnergyCost.ToString();
+
+
+        for (int i = 0; i < typeimages.Length; i++)
+        {
+            if (i < carddata.cardtype.Count)
+            {
+                typeimages[i].gameObject.SetActive(true);
+            }
+        }
     }
 }
