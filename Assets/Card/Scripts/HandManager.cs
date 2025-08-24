@@ -8,9 +8,9 @@ public class HandManager : MonoBehaviour
 
     public GameObject cardPrefab; // assign the card prefab in the inspector
     public Transform handTransform; // Hand position in the scene
-    public float fanspread = -4f;
+    public float fanspread;
    
-    public float cardspacing = 70f; // Adjust this value to change the spacing between cards
+    public float cardspacing = 70f;
     public List<GameObject> handCards = new List<GameObject>();
 
 
@@ -20,23 +20,13 @@ public class HandManager : MonoBehaviour
             handCards.Add(newCard);
 
 
-            newCard.GetComponent<CardDisplay>().carddata = carddata;
-        UpdateHandVisuals();
+            newCard.GetComponentInChildren<CardDisplay>().carddata = carddata;
+            UpdateHandVisuals();
     }
 
-    public void RemoveCardFromHand(Card card)
-    {
-        GameObject cardToRemove = handCards.Find(c => c.GetComponent<CardDisplay>().carddata == card);
-        if (cardToRemove != null)
-        {
-            handCards.Remove(cardToRemove);
-            UpdateHandVisuals();
-        }
-    }
     private void Update()
     {
         UpdateHandVisuals();
-        handCards.RemoveAll(item => item == null);
     }
 
     public void UpdateHandVisuals()
@@ -46,14 +36,14 @@ public class HandManager : MonoBehaviour
         if (cardCount == 1)
         {
             handCards[0].transform.localPosition = new Vector3(0f, 0f, 0f);
+            return;
         }
 
 
         for (int i = 0; i < cardCount; i++)
         {
-            float horizontalOffset = cardspacing * (i - (cardCount - 1) / 2f);
-            handCards[i].transform.localPosition = new Vector3(horizontalOffset, 0f, 0f);
-
+                float horizontalOffset = cardspacing * (i - (cardCount - 1) / 2f);
+                handCards[i].transform.localPosition = new Vector3(horizontalOffset, 0f, 0f);
         }
     }
 }

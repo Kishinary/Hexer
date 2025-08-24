@@ -22,6 +22,14 @@ namespace CardScripts
 
         public int CardEnergyCost;
 
+
+        private int range;
+
+
+
+
+        public int CardID;
+
         public enum CardType
         {
             Melee,
@@ -38,6 +46,38 @@ namespace CardScripts
             Summon,
             Support
         }
+
+        public void Range() 
+            {
+            if (cardtype[0] == CardType.Melee) 
+                {
+                    range = 1;
+            }
+            if (cardtype[0] == CardType.Ranged) 
+                {
+                    range = 3;
+            }
+        } 
+
+        public void UseCard()
+        {
+            switch(CardID)
+            {
+                case 0:
+                    Debug.Log("Card Used: " + cardName);
+                    break;
+                case 1:
+                    Debug.Log("Card Used: " + cardName);
+                    break;
+                case 2:
+                    Debug.Log("Card Used: " + cardName);
+                    break;
+                default:
+                    Debug.Log("Card Used: " + cardName);
+                    break;
+            }
+        }
+
     }
    
 }

@@ -1,3 +1,4 @@
+using CardScripts;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -28,6 +29,8 @@ public class CardMovement : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
 
 
     public float offset;
+
+    public Card cardData;
     void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -78,9 +81,9 @@ public class CardMovement : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
     {
         if (isGlowing == true && isDragging == false)
         {
-            Destroy(this.gameObject);
-            isDestroyed = true;
-            Destroy(CardSlot);
+            useCard();
+            RemoveCard();
+
         }
     }
     private void HandleHoverState()
@@ -92,8 +95,19 @@ public class CardMovement : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
         }
     }
 
+    private void RemoveCard()
+    {
+        HandManager handManager = FindFirstObjectByType<HandManager>();
+        handManager.handCards.Remove(CardSlot);
+        handManager.UpdateHandVisuals();
+        Destroy(CardSlot);
+    }
 
 
+    private void useCard()
+    {
+
+    }
 
 
 

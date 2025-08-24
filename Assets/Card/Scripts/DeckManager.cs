@@ -38,8 +38,7 @@ public class DeckManager : MonoBehaviour
         AllCards.AddRange(cards); // Load all cards from the Resources folder
         handManager = FindAnyObjectByType<HandManager>();
 
-
-        for (int i = 0; i < startingHandSize; i++)
+        for (int i = 0; i < 6; i++)
         {
             DrawCard(handManager);
         }
