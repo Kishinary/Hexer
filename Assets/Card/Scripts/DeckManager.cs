@@ -19,18 +19,9 @@ public class DeckManager : MonoBehaviour
     private HandManager handManager;
 
 
-    public void DrawCard(HandManager handManager)
-    {
-        if (AllCards.Count == 0)
-        return;
-        Card nextCard = AllCards[currentIndex];
-        
-        if (currentHandSize < MaxHandSize)
-        {
-            handManager.Addcardtohand(nextCard);
-            currentIndex = (currentIndex + 1) % AllCards.Count;
-        }
-    }
+    private DrawPileManager drawPileManager;
+
+    private bool startBattleRun = true;
     private void Start()
     {
         Card[] cards = Resources.LoadAll<Card>("Cards");
@@ -38,17 +29,35 @@ public class DeckManager : MonoBehaviour
         AllCards.AddRange(cards); // Load all cards from the Resources folder
         handManager = FindAnyObjectByType<HandManager>();
 
-        for (int i = 0; i < 6; i++)
+
+    }
+
+    private void Awake()
+    {
+        if (drawPileManager == null)
         {
-            DrawCard(handManager);
+            drawPileManager = FindAnyObjectByType<DrawPileManager>();
+        }
+        if (handManager == null)
+        {
+            handManager = FindAnyObjectByType<HandManager>();
+        }
+    }
+    private void Update()
+    {
+        if(startBattleRun)
+        {
+            BattleSetUp();
         }
     }
 
-    public void Update()
+    public void BattleSetUp()
     {
-        if (handManager != null) 
-            {
-                currentHandSize = handManager.handCards.Count;
-        }
+        handManager.BattleSetup(MaxHandSize);
+        drawPileManager.MakeDrawPile(AllCards);
+        drawPileManager.BattleSetup(startingHandSize, MaxHandSize);
+        startBattleRun = false;
     }
 }
+
+

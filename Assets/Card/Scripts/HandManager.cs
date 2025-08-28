@@ -12,7 +12,7 @@ public class HandManager : MonoBehaviour
    
     public float cardspacing = 70f;
     public List<GameObject> handCards = new List<GameObject>();
-
+    public int maxHandSize;
 
     public void Addcardtohand(Card carddata)
     {
@@ -27,6 +27,10 @@ public class HandManager : MonoBehaviour
     private void Update()
     {
         UpdateHandVisuals();
+    }
+    public void BattleSetup(int setMaxHandSize)
+    {
+        maxHandSize = setMaxHandSize;
     }
 
     public void UpdateHandVisuals()

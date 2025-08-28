@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 695a5d33342faf347a6229181691f0e7, type: 3}
-  m_Name: Swordy 1
+  m_Name: Snail's Wooden Mace
   m_EditorClassIdentifier: 
-  cardImage: {fileID: -8191357283332501934, guid: c2ed8443de9460a4fadab7d583e470a6, type: 3}
-  cardName: Swordy
-  cardDescription: Deal 40 Melee Damage
+  cardImage: {fileID: -5294332911709182022, guid: c2ed8443de9460a4fadab7d583e470a6, type: 3}
+  cardName: Snail's Wooden Mace
+  cardDescription: He probably made this himself. Deal 110 damages after 3s of charging,
+    -20% movement speed in the process.
   cardtype: 00000000
-  damagetype: 00000000
-  damage: 40
+  damagetype: 
+  damage: 110
   CardEnergyCost: 1
   weight: 1
-  CardID: 0
+  CardID: 7

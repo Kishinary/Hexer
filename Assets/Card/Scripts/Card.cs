@@ -17,19 +17,16 @@ namespace CardScripts
 
         public List<DamageType> damagetype;
         public int damage;
-        public int minimumDamage;
-        public int maximumDamage;
 
         public int CardEnergyCost;
-
+        
 
         private int range;
-
+        public int weight;
 
 
 
         public int CardID;
-
         public enum CardType
         {
             Melee,
@@ -61,18 +58,19 @@ namespace CardScripts
 
         public void UseCard()
         {
-            switch(CardID)
+            Debug.Log("Using Card: " + cardName);
+            switch (CardID)
             {
-                case 0:
+                case 0: //Swordy
                     Debug.Log("Card Used: " + cardName);
                     break;
-                case 1:
+                case 1: //Bowy
                     Debug.Log("Card Used: " + cardName);
                     break;
-                case 2:
+                case 2: //Staffy
                     Debug.Log("Card Used: " + cardName);
                     break;
-                default:
+                case 3:
                     Debug.Log("Card Used: " + cardName);
                     break;
             }

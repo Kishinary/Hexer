@@ -30,7 +30,6 @@ public class CardMovement : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
 
     public float offset;
 
-    public Card cardData;
     void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -97,6 +96,8 @@ public class CardMovement : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
 
     private void RemoveCard()
     {
+        DiscardManager discardManager = FindFirstObjectByType<DiscardManager>();
+        discardManager.AddToDiscard(GetComponent<CardDisplay>().carddata);
         HandManager handManager = FindFirstObjectByType<HandManager>();
         handManager.handCards.Remove(CardSlot);
         handManager.UpdateHandVisuals();
@@ -106,7 +107,8 @@ public class CardMovement : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
 
     private void useCard()
     {
-
+        CardDisplay CardData = GetComponent<CardDisplay>();
+        CardData.carddata.UseCard();
     }
 
 

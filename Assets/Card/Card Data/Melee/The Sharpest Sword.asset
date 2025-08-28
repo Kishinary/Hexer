@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 695a5d33342faf347a6229181691f0e7, type: 3}
-  m_Name: Swordy 2
+  m_Name: The Sharpest Sword
   m_EditorClassIdentifier: 
-  cardImage: {fileID: 9190931505280170823, guid: 8cded2f49a19ac243886b8171b2887f8, type: 3}
-  cardName: Swordy
-  cardDescription: Deal 40 Melee Damage
+  cardImage: {fileID: -1461594005858965277, guid: c2ed8443de9460a4fadab7d583e470a6, type: 3}
+  cardName: The Sharpest Sword
+  cardDescription: The sharpest one in circulation, deal 160 damages
   cardtype: 00000000
-  damagetype: 00000000
-  damage: 40
-  minimumDamage: 40
-  maximumDamage: 40
-  CardEnergyCost: 1
+  damagetype: 
+  damage: 160
+  CardEnergyCost: 3
+  weight: 3
+  CardID: 5

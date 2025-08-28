@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 695a5d33342faf347a6229181691f0e7, type: 3}
-  m_Name: Bowy
+  m_Name: Staffy
   m_EditorClassIdentifier: 
-  cardImage: {fileID: 0}
-  cardName: Bowy
-  cardDescription: Deal 5 Range Damage
+  cardImage: {fileID: 1122513320757391214, guid: c2ed8443de9460a4fadab7d583e470a6, type: 3}
+  cardName: Staffy
+  cardDescription: Deal 5 Magic Damage
   cardtype: 01000000
-  health: 0
-  damagetype: 01000000
+  damagetype: 02000000
   damage: 5
-  minimumDamage: 5
-  maximumDamage: 5
+  CardEnergyCost: 1
+  weight: 0
+  CardID: 2

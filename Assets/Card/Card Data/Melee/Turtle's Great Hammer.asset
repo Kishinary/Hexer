@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 695a5d33342faf347a6229181691f0e7, type: 3}
-  m_Name: Staffy
+  m_Name: Turtle's Great Hammer
   m_EditorClassIdentifier: 
-  cardImage: {fileID: 2608080019626251754, guid: 225b9ec881422ce4f8c53392c430de85, type: 3}
-  cardName: Staffy
-  cardDescription: Deal 5 Magic Damage
-  cardtype: 01000000
-  health: 0
-  damagetype: 02000000
-  damage: 5
-  minimumDamage: 5
-  maximumDamage: 5
+  cardImage: {fileID: 0}
+  cardName: Turtle's Great Hammer
+  cardDescription: Taken from the goat himself. Deal 300 damages after charging for
+    8s. In the process, movement speed is reduced by 20%
+  cardtype: 00000000
+  damagetype: 
+  damage: 300
+  CardEnergyCost: 3
+  weight: 4
+  CardID: 9

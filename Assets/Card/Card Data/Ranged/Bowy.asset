@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 695a5d33342faf347a6229181691f0e7, type: 3}
-  m_Name: Swordy 1
+  m_Name: Bowy
   m_EditorClassIdentifier: 
-  cardImage: {fileID: -8191357283332501934, guid: c2ed8443de9460a4fadab7d583e470a6, type: 3}
-  cardName: Swordy
-  cardDescription: Deal 40 Melee Damage
-  cardtype: 00000000
-  damagetype: 00000000
-  damage: 40
+  cardImage: {fileID: 1788521935399006232, guid: c2ed8443de9460a4fadab7d583e470a6, type: 3}
+  cardName: Bowy
+  cardDescription: Deal 5 Range Damage
+  cardtype: 01000000
+  damagetype: 01000000
+  damage: 5
   CardEnergyCost: 1
-  weight: 1
-  CardID: 0
+  weight: 0
+  CardID: 1

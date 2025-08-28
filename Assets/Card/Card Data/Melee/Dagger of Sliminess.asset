@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 695a5d33342faf347a6229181691f0e7, type: 3}
-  m_Name: Swordy 1
+  m_Name: Dagger of Sliminess
   m_EditorClassIdentifier: 
-  cardImage: {fileID: -8191357283332501934, guid: c2ed8443de9460a4fadab7d583e470a6, type: 3}
-  cardName: Swordy
-  cardDescription: Deal 40 Melee Damage
+  cardImage: {fileID: -2452251204038352768, guid: c2ed8443de9460a4fadab7d583e470a6, type: 3}
+  cardName: Dagger of Sliminess
+  cardDescription: Sticky as it is, I would use this. Deal 200 Damagers after charging
+    for 5s. In the process, movement speed is reduced by 20%
   cardtype: 00000000
-  damagetype: 00000000
-  damage: 40
-  CardEnergyCost: 1
-  weight: 1
-  CardID: 0
+  damagetype: 
+  damage: 200
+  CardEnergyCost: 2
+  weight: 2
+  CardID: 8
