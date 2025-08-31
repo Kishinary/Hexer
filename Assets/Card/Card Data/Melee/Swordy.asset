@@ -16,8 +16,8 @@ MonoBehaviour:
   cardName: Swordy
   cardDescription: Deal 40 Melee Damage
   cardtype: 00000000
-  damagetype: 00000000
   damage: 40
   CardEnergyCost: 1
   weight: 1
+  cardTheme: 00000000
   CardID: 0

@@ -5,6 +5,8 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 using System.Runtime.CompilerServices;
+using System;
+using Unity.VisualScripting;
 
 public class DrawPileManager : MonoBehaviour
 {
@@ -14,7 +16,7 @@ public class DrawPileManager : MonoBehaviour
 
     public int startingHandSize = 5;
 
-    public int MaxHandSize = 10;
+    public int MaxHandSize = 8;
 
     public int currentHandSize;
 
@@ -39,12 +41,12 @@ public class DrawPileManager : MonoBehaviour
             handManager.Addcardtohand(nextCard);
             drawPile.RemoveAt(currentIndex);
             UpdateDrawPileCount();
-           if (drawPile.Count > 0)
+            if (drawPile.Count > 0)
             {
                 currentIndex = currentIndex % drawPile.Count;
             }
         }
-}
+    }
 
     private void RefillDeckFromDiscard()
     {
@@ -64,6 +66,7 @@ public class DrawPileManager : MonoBehaviour
     private void Start()
     {
         handManager = FindAnyObjectByType<HandManager>();
+        DrawEvery5Seconds(5);
     }
 
     public void Update()
@@ -78,7 +81,7 @@ public class DrawPileManager : MonoBehaviour
         drawPile.AddRange(cardsToAdd);
         Utility.Shuffle(drawPile);
         UpdateDrawPileCount();
-}
+    }
     private void UpdateDrawPileCount()
     {
         drawPileCounter.text = drawPile.Count.ToString();
@@ -92,5 +95,11 @@ public class DrawPileManager : MonoBehaviour
         {
             DrawCard(handManager);
         }
+    }
+
+
+    void DrawEvery5Seconds(float duration)
+    {
+        InvokeRepeating("DrawCard", 0f, duration);
     }
 }

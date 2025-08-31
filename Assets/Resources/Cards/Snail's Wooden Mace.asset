@@ -17,8 +17,8 @@ MonoBehaviour:
   cardDescription: He probably made this himself. Deal 110 damages after 3s of charging,
     -20% movement speed in the process.
   cardtype: 00000000
-  damagetype: 
   damage: 110
   CardEnergyCost: 1
   weight: 1
+  cardTheme: 00000000
   CardID: 7

@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 695a5d33342faf347a6229181691f0e7, type: 3}
   m_Name: Turtle's Great Hammer
   m_EditorClassIdentifier: 
-  cardImage: {fileID: 0}
+  cardImage: {fileID: -5643105228771564274, guid: a2621beabd528434887a094efbb8ce3c, type: 3}
   cardName: Turtle's Great Hammer
   cardDescription: Taken from the goat himself. Deal 300 damages after charging for
     8s. In the process, movement speed is reduced by 20%
   cardtype: 00000000
-  damagetype: 
   damage: 300
   CardEnergyCost: 3
   weight: 4
+  cardTheme: 00000000
   CardID: 9

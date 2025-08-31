@@ -16,8 +16,8 @@ MonoBehaviour:
   cardName: The Transcending Dagger
   cardDescription: Its glowing! Deal 320 damages
   cardtype: 00000000
-  damagetype: 
   damage: 320
   CardEnergyCost: 4
   weight: 4
+  cardTheme: 00000000
   CardID: 6

@@ -15,7 +15,6 @@ namespace CardScripts
         public List <CardType> cardtype;
 
 
-        public List<DamageType> damagetype;
         public int damage;
 
         public int CardEnergyCost;
@@ -24,9 +23,13 @@ namespace CardScripts
         private int range;
         public int weight;
 
-
+        public List<CardTheme> cardTheme;
 
         public int CardID;
+
+
+
+        public GameObject weaponPrefab;
         public enum CardType
         {
             Melee,
@@ -35,13 +38,13 @@ namespace CardScripts
             Summon,
             Support
         }
-        public enum DamageType
+        public enum CardTheme
         {
-            Melee,
-            Ranged,
-            Magic,
-            Summon,
-            Support
+            StoneAge,
+            MedievalAge,
+            ModernAge,
+            FutureAge,
+            DaSea
         }
 
         public void Range() 
@@ -58,11 +61,14 @@ namespace CardScripts
 
         public void UseCard()
         {
-            Debug.Log("Using Card: " + cardName);
+            GameObject player = GameObject.FindWithTag("Player");
+            if (cardtype.Contains(CardType.Melee) || cardtype.Contains(CardType.Ranged))
+            {
+                Instantiate(weaponPrefab, new Vector3(0.09f, -0.05f, 0f), Quaternion.identity, player.GetComponent<PlayerWeapon>().weaponPos.transform);
+            }
             switch (CardID)
             {
                 case 0: //Swordy
-                    Debug.Log("Card Used: " + cardName);
                     break;
                 case 1: //Bowy
                     Debug.Log("Card Used: " + cardName);

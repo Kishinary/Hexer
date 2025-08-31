@@ -12,7 +12,7 @@ public class DeckManager : MonoBehaviour
 
     public int startingHandSize = 5;
 
-    public int MaxHandSize = 10;
+    public int MaxHandSize = 8;
 
     public int currentHandSize;
 

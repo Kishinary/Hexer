@@ -17,8 +17,8 @@ MonoBehaviour:
   cardDescription: Sticky as it is, I would use this. Deal 200 Damagers after charging
     for 5s. In the process, movement speed is reduced by 20%
   cardtype: 00000000
-  damagetype: 
   damage: 200
   CardEnergyCost: 2
   weight: 2
+  cardTheme: 00000000
   CardID: 8

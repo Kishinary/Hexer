@@ -16,8 +16,8 @@ MonoBehaviour:
   cardName: Old Staff
   cardDescription: Deal 100 damages, but loss half a heart
   cardtype: 00000000
-  damagetype: 
   damage: 100
   CardEnergyCost: 1
   weight: 1
+  cardTheme: 00000000
   CardID: 3

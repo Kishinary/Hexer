@@ -14,12 +14,16 @@ public class CardDisplay : MonoBehaviour
     public TMP_Text cardenergy;
 
     public Image[] typeimages;
-     
+
+
+    public Image[] cardBackgrounds;
 
 
     void Start()
     {
         UpdateCardDisplay();
+        UpdateCardBackground();
+        cardImage.SetNativeSize();
     }
 
     public void UpdateCardDisplay()
@@ -30,13 +34,49 @@ public class CardDisplay : MonoBehaviour
         cardDescription.text = carddata.cardDescription;
         cardenergy.text = carddata.CardEnergyCost.ToString();
 
-
-        for (int i = 0; i < typeimages.Length; i++)
+        if (carddata.cardtype.Contains(Card.CardType.Melee))
         {
-            if (i < carddata.cardtype.Count)
-            {
-                typeimages[i].gameObject.SetActive(true);
-            }
+            typeimages[0].gameObject.SetActive(true);
         }
+        if (carddata.cardtype.Contains(Card.CardType.Ranged))
+        {
+            typeimages[1].gameObject.SetActive(true);
+        }
+        if (carddata.cardtype.Contains(Card.CardType.Magic))
+        {
+            typeimages[2].gameObject.SetActive(true);
+        }
+        if (carddata.cardtype.Contains(Card.CardType.Summon))
+        {
+            typeimages[3].gameObject.SetActive(true);
+        }
+        if (carddata.cardtype.Contains(Card.CardType.Support))
+        {
+            typeimages[4].gameObject.SetActive(true);
+        }
+       
     }
+    public void UpdateCardBackground()
+    {
+        if (carddata.cardTheme.Contains(Card.CardTheme.StoneAge))
+        {
+            cardBackgrounds[0].gameObject.SetActive(true);
+        }
+        if (carddata.cardTheme.Contains(Card.CardTheme.MedievalAge))
+        {
+            cardBackgrounds[1].gameObject.SetActive(true);
+        }
+        if (carddata.cardTheme.Contains(Card.CardTheme.ModernAge))
+        {
+            cardBackgrounds[2].gameObject.SetActive(true);
+        }
+        if (carddata.cardTheme.Contains(Card.CardTheme.FutureAge))
+        {
+            cardBackgrounds[3].gameObject.SetActive(true);
+        }
+        if (carddata.cardTheme.Contains(Card.CardTheme.DaSea))
+        {
+            cardBackgrounds[4].gameObject.SetActive(true);
+        }
+    } 
 }

@@ -16,8 +16,8 @@ MonoBehaviour:
   cardName: Sword of Sharper Edge
   cardDescription: A slightly sharper sword. Deal 100 damages
   cardtype: 00000000
-  damagetype: 
   damage: 100
   CardEnergyCost: 2
   weight: 2
+  cardTheme: 00000000
   CardID: 4
