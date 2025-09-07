@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 695a5d33342faf347a6229181691f0e7, type: 3}
   m_Name: Swordy
   m_EditorClassIdentifier: 
-  cardImage: {fileID: 8741283253138907458, guid: 1a353977f3b0a2546ba741836ba950d5, type: 3}
+  cardImage: {fileID: -8191357283332501934, guid: c2ed8443de9460a4fadab7d583e470a6, type: 3}
   cardName: Swordy
   cardDescription: Deal 40 Melee Damage
   cardtype: 00000000
   damage: 40
   CardEnergyCost: 1
-  weight: 0
-  cardTheme: 01000000
+  weight: 1
+  cardTheme: 00000000
   CardID: 0

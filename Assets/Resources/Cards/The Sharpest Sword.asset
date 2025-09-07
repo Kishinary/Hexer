@@ -19,5 +19,5 @@ MonoBehaviour:
   damage: 160
   CardEnergyCost: 3
   weight: 3
-  cardTheme: 01000000
+  cardTheme: 00000000
   CardID: 5
